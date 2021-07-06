@@ -13,9 +13,9 @@ namespace WebDev {
 	namespace Version {
 
 		static const char *version_ = "1.2.0";
-		static const char *build_ = "13";
-		static const char *versionWithBuild_ = "1.2.0.13";
-		static const char *datetime_ = "2021-07-06 03:54:37";
+		static const char *build_ = "14";
+		static const char *versionWithBuild_ = "1.2.0.14";
+		static const char *datetime_ = "2021-07-06 04:11:52";
 
 		const char *version() {
 			return version_;
