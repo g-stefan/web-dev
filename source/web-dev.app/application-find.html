@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="xui -browser">
+<head>
+<meta charset="UTF-8">
+<title>Find</title>
+<!-- 
+//
+// Copyright (c) 2020-2021 Grigore Stefan <g_stefan@yahoo.com>
+// Created by Grigore Stefan <g_stefan@yahoo.com>
+//
+// MIT License (MIT) <http://opensource.org/licenses/MIT>
+//
+-->
+<link rel="stylesheet" href="lib/normalize.min.css">
+<link rel="stylesheet" href="lib/roboto-regular/roboto-regular.css">
+<link rel="stylesheet" href="lib/material-icons/material-icons.css">
+<link rel="stylesheet" href="lib/overlayscrollbars.min.css">
+<link rel="stylesheet" href="lib/xui.complete.min.css">
+<script>
+
+function cmdFind() {
+	ipcRenderer.send("find-text", document.forms["textFind"].elements["textToFind"].value);
+};
+
+function cmdFindNext() {
+	ipcRenderer.send("find-text-next", document.forms["textFind"].elements["textToFind"].value);	
+};
+
+function cmdClearFind() {
+	document.forms["textFind"].elements["textToFind"].value="";
+	ipcRenderer.send("find-clear");
+};
+
+</script>
+</head>
+<body class="xui">
+	<form name="textFind" onsubmit="return false;" class="xui center-xy" style="width:100%;height:100%;">
+		<div class="xui form-input-group center-xy">
+			<input type="text" name="textToFind" value="" size="32" onchange="cmdFind();return false;"></input>
+			<button type="button" name="findNext" onclick="cmdFindNext();return false;"><i class="material-icons">search</i></button>
+			<button type="button" name="resetSearch" onclick="cmdClearFind();return false;"><i class="material-icons">close</i></button>
+		</div>
+	</form>
+	<script src="lib/jquery-3.5.1.min.js"></script>
+	<script src="lib/jquery.overlayscrollbars.min.js"></script>
+	<script src="lib/xui.complete.min.js"></script>
+</body>
+</html>

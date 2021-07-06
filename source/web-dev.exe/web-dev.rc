@@ -1,0 +1,17 @@
+//
+// Web Dev
+//
+// Copyright (c) 2020-2021 Grigore Stefan <g_stefan@yahoo.com>
+// Created by Grigore Stefan <g_stefan@yahoo.com>
+//
+// MIT License (MIT) <http://opensource.org/licenses/MIT>
+//
+
+#include "xyo-application-version--os-windows-rc.hpp"
+#include "web-dev-version.hpp"
+#include "web-dev-copyright.hpp"
+
+1  ICON "web-dev.ico"
+
+XYO_APPLICATION_VERSION_INFO(WEB_DEV,"web-dev.exe","Web Dev");
+

@@ -1,0 +1,1 @@
+<?php include("$PHPMYADMIN_CONFIG_FILE");

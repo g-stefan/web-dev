@@ -1,0 +1,10 @@
+{
+	"application.name": "Web-Dev",
+	"apache-http-server-http.port": 80,
+	"maria-db.port": 3306,
+	"maria-db.username": "root",
+	"maria-db.password": "replaced-by-build-script-6f56fb60808b6ded0ab11fa6fe71c060f4c21518d2a0b69df20cfedbef00caf0550a52d2d7c4bbf7a4b3741b4f0b000ba4c2958c438cb1455fd3f678178244d9",
+	"phpmyadmin.secret": "replaced-by-build-script-a3538c825764e230f4183aa146e6960426c71924560ff1c202b0fe13f418e970e761cc8f5101a171ba5e4fb3e009cfd45bcbf2e644d40282716d1ddf01df7a07",
+	"admin.email": "admin@localhost",
+	"developer": true
+}
