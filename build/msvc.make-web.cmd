@@ -40,7 +40,6 @@ Shell.chdir("apache-http-server");
 Shell.removeDirRecursively("include");
 Shell.removeDirRecursively("lib");
 Shell.chdir("..");
-
 //
 Shell.system("7z x -aoa ../../vendor/mariadb-10.5.11-winx64.zip");
 Shell.rename("mariadb-10.5.11-winx64","maria-db");
@@ -57,6 +56,11 @@ Shell.chdir("php");
 Shell.system("7z x -aoa ../../../vendor/php-8.0.8-Win32-vs16-x64.zip");
 Shell.copy("../../../vendor/composer.phar","composer.phar");
 Shell.chdir("..");
+Shell.mkdir("../../temp");
+Shell.chdir("../../temp");
+Shell.system("7z x -aoa ../vendor/php_mailparse-3.1.1-8.0-ts-vs16-x64.zip");
+Shell.copy("php_mailparse.dll","../output/library/php/ext/php_mailparse.dll");
+Shell.chdir("../output/library");
 //
 Shell.system("7z x -aoa ../../vendor/phpMyAdmin-5.1.1-all-languages.zip");
 Shell.rename("phpMyAdmin-5.1.1-all-languages","phpmyadmin");
