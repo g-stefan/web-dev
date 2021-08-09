@@ -10,10 +10,10 @@
 #ifndef WEB_DEV_VERSION_HPP
 #define WEB_DEV_VERSION_HPP
 
-#define WEB_DEV_VERSION_ABCD                1,2,0,15
-#define WEB_DEV_VERSION_STR                 "1.2.0"
-#define WEB_DEV_VERSION_STR_BUILD           "15"
-#define WEB_DEV_VERSION_STR_DATETIME        "2021-07-11 13:07:18"
+#define WEB_DEV_VERSION_ABCD                1,3,0,16
+#define WEB_DEV_VERSION_STR                 "1.3.0"
+#define WEB_DEV_VERSION_STR_BUILD           "16"
+#define WEB_DEV_VERSION_STR_DATETIME        "2021-08-09 20:51:32"
 
 #ifndef XYO_RC
 
