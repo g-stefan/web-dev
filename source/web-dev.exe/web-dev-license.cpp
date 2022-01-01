@@ -1,7 +1,7 @@
 //
 // Web Dev
 //
-// Copyright (c) 2020-2021 Grigore Stefan <g_stefan@yahoo.com>
+// Copyright (c) 2020-2022 Grigore Stefan <g_stefan@yahoo.com>
 // Created by Grigore Stefan <g_stefan@yahoo.com>
 //
 // MIT License (MIT) <http://opensource.org/licenses/MIT>
@@ -16,7 +16,7 @@ namespace WebDev {
 			"\r\n"
 			"MIT License (MIT)\r\n"
 			"\r\n"
-			"Copyright (c) 2020-2021 Grigore Stefan <g_stefan@yahoo.com>\r\n"
+			"Copyright (c) 2020-2022 Grigore Stefan <g_stefan@yahoo.com>\r\n"
 			"\r\n"
 			"Permission is hereby granted, free of charge, to any person obtaining a copy of\r\n"
 			"this software and associated documentation files (the \"Software\"), to deal in\r\n"
@@ -38,7 +38,7 @@ namespace WebDev {
 
 		static const char *shortLicense_ =
 			"\r\n"
-			"Copyright (c) 2020-2021 Grigore Stefan <g_stefan@yahoo.com>\r\n"
+			"Copyright (c) 2020-2022 Grigore Stefan <g_stefan@yahoo.com>\r\n"
 			"MIT License (MIT) <http://opensource.org/licenses/MIT>\r\n"
 			"\r\n";
 

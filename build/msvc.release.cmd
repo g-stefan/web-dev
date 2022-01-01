@@ -15,8 +15,6 @@ echo "Error: release"
 exit 1
 :cmdXDefined
 
-set XYO_PATH_RELEASE=release
-
 call :cmdX call .\build\msvc.config.cmd
 call :cmdX call .\build\msvc.clean.cmd
 call :cmdX call .\build\msvc.vendor.cmd
