@@ -2,35 +2,99 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(materialicons-regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-       local('MaterialIcons-Regular'),
-       url(materialicons-regular.woff2) format('woff2'),
-       url(materialicons-regular.woff) format('woff'),
-       url(materialicons-regular.ttf) format('truetype');
+  src: local('Material Icons'), url(material-icons.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons Outlined'), url(material-icons-outlined.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Material Icons Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons Round'), url(material-icons-round.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Material Icons Sharp';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons Sharp'), url(material-icons-sharp.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Material Icons Two Tone';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons Two Tone'), url(material-icons-two-tone.otf) format('opentype');
 }
 
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
+  font-size: 24px;
   line-height: 1;
-  text-transform: none;
   letter-spacing: normal;
-  word-wrap: normal;
+  text-transform: none;
+  display: inline-block;
   white-space: nowrap;
+  word-wrap: normal;
   direction: ltr;
+}
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
+.material-icons-outlined {
+  font-family: 'Material Icons Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
 
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
+.material-icons-round {
+  font-family: 'Material Icons Round';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
 
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+.material-icons-sharp {
+  font-family: 'Material Icons Sharp';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+.material-icons-two-tone {
+  font-family: 'Material Icons Two Tone';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
 }

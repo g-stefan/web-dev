@@ -3,7 +3,7 @@ rem Public domain
 rem http://unlicense.org/
 rem Created by Grigore Stefan <g_stefan@yahoo.com>
 
-echo -^> release web-dev
+echo - %BUILD_PROJECT% ^> release
 
 goto cmdXDefined
 :cmdX
@@ -15,11 +15,8 @@ echo "Error: release"
 exit 1
 :cmdXDefined
 
-call :cmdX call .\build\msvc.config.cmd
-call :cmdX call .\build\msvc.clean.cmd
-call :cmdX call .\build\msvc.vendor.cmd
-call :cmdX call .\build\msvc.make.cmd version
-call :cmdX call .\build\msvc.make.cmd
-call :cmdX call .\build\msvc.sign.cmd
-call :cmdX call .\build\msvc.archive.cmd
-call :cmdX call .\build\msvc.clean.cmd
+call :cmdX call build\platform\msvc.cmd vendor
+call :cmdX call build\platform\msvc.cmd version
+call :cmdX call build\platform\msvc.cmd make
+call :cmdX call build\platform\msvc.cmd sign
+call :cmdX call build\platform\msvc.cmd archive

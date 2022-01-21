@@ -6,7 +6,7 @@ rem Created by Grigore Stefan <g_stefan@yahoo.com>
 set ACTION=%1
 if "%1" == "" set ACTION=make
 
-echo -^> make web-dev
+echo - %BUILD_PROJECT% ^> %ACTION%
 
 goto cmdXDefined
 :cmdX
