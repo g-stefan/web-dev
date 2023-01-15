@@ -1,0 +1,24 @@
+// Web Dev
+// Copyright (c) 2020-2023 Grigore Stefan <g_stefan@yahoo.com>
+// MIT License (MIT) <http://opensource.org/licenses/MIT>
+// SPDX-FileCopyrightText: 2020-2023 Grigore Stefan <g_stefan@yahoo.com>
+// SPDX-License-Identifier: MIT
+
+#ifndef WEBDEV_VERSION_RH
+#define WEBDEV_VERSION_RH
+
+#ifndef WEBDEV_NO_VERSION
+#define WEBDEV_VERSION_ABCD 2,0,0,29
+#define WEBDEV_VERSION_STR "2.0.0"
+#define WEBDEV_VERSION_STR_BUILD "29"
+#define WEBDEV_VERSION_STR_DATETIME "2023-01-15 17:14:08"
+#define WEBDEV_VERSION_STR_WITH_BUILD "2.0.0.29"
+#else
+#define WEBDEV_VERSION_ABCD 0,0,0,0
+#define WEBDEV_VERSION_STR "0.0.0"
+#define WEBDEV_VERSION_STR_BUILD "0"
+#define WEBDEV_VERSION_STR_DATETIME "0000-00-00"
+#define WEBDEV_VERSION_STR_WITH_BUILD "0.0.0.0"
+#endif
+
+#endif

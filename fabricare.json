@@ -1,0 +1,20 @@
+{
+	"solution" : {
+		"name" : "web-dev",
+		"type" : "xyo-cpp",
+		"projects" : [
+			{
+				"name" : "web-dev",
+				"make" : "exe.static",
+				"SPDX-License-Identifier": "MIT",
+				"sourcePath" : "web-dev.exe",
+				"dependency" : [
+					"xyo-win"
+				],
+				"outputPath" : "output"
+			}
+		],		
+		"releaseOutput" : true,
+		"hasGithub" : true
+	}
+}

@@ -1,31 +1,30 @@
-//
-// Copyright (c) 2020-2022 Grigore Stefan <g_stefan@yahoo.com>
-// Created by Grigore Stefan <g_stefan@yahoo.com>
-//
+// Web Dev
+// Copyright (c) 2020-2023 Grigore Stefan <g_stefan@yahoo.com>
 // MIT License (MIT) <http://opensource.org/licenses/MIT>
-//
+// SPDX-FileCopyrightText: 2020-2023 Grigore Stefan <g_stefan@yahoo.com>
+// SPDX-License-Identifier: MIT
 
-var this_=module.exports;
+var this_ = module.exports;
 
-var appConfig=require("./application-config.js").config;
-var app=require("electron").app;
-var path=require("path");
-var cwd=process.cwd();
+var appConfig = require("./application-config.js").config;
+var app = require("electron").app;
+var path = require("path");
+var cwd = process.cwd();
 
 app.setName(appConfig["application.name"]);
-app.setPath("appData",path.join(cwd,"repository"));
-app.setPath("userData",path.join(cwd,"repository/"+app.getName()));
+app.setPath("appData", path.join(cwd, "repository"));
+app.setPath("userData", path.join(cwd, "repository/" + app.getName()));
 
-this_.mainWindow=null;
+this_.mainWindow = null;
 
-this_.secondInstance=!app.requestSingleInstanceLock();
+this_.secondInstance = !app.requestSingleInstanceLock();
 
-if(this_.secondInstance) {
+if (this_.secondInstance) {
 	app.quit();
 	return;
 };
 
-app.on("second-instance", function(event, commandLine, workingDirectory){
+app.on("second-instance", function(event, commandLine, workingDirectory) {
 	if (this_.mainWindow) {
 		if (this_.mainWindow.isMinimized()) {
 			this_.mainWindow.restore();
@@ -35,18 +34,18 @@ app.on("second-instance", function(event, commandLine, workingDirectory){
 	};
 });
 
-var BrowserWindow=require("electron").BrowserWindow;
-var ipcMain=require("electron").ipcMain;
+var BrowserWindow = require("electron").BrowserWindow;
+var ipcMain = require("electron").ipcMain;
 
 app.on("window-all-closed", function() {
-	if(this_.shutdownServices) {
+	if (this_.shutdownServices) {
 		this_.shutdownServices();
 	} else {
 		app.quit();
 	};
 });
 
-app.on("before-quit",function() {
+app.on("before-quit", function() {
 	this_.mainWindow.removeAllListeners("close");
 });
 
@@ -54,17 +53,17 @@ require("./application-context-menu.js");
 
 app.on("ready", function() {
 	this_.mainWindow = new BrowserWindow({
-		width: 1366,
-		height: 768,
-		icon: path.join(__dirname, "application.ico"),
-		backgroundColor: "#FFFFFF",
-		webPreferences: {
-			nodeIntegration: false,
-			preload: __dirname+"/application-preload.js",
-			plugins: true,
-			webSecurity: true,
-			allowDisplayingInsecureContent: false,
-			allowRunningInsecureContent: false
+		width : 1366,
+		height : 768,
+		icon : path.join(__dirname, "application.ico"),
+		backgroundColor : "#FFFFFF",
+		webPreferences : {
+			nodeIntegration : false,
+			preload : __dirname + "/application-preload.js",
+			plugins : true,
+			webSecurity : true,
+			allowDisplayingInsecureContent : false,
+			allowRunningInsecureContent : false
 		}
 	});
 	//
@@ -79,6 +78,5 @@ app.on("ready", function() {
 		this_.mainWindow = null;
 	});
 	//
-	this_.mainWindow.loadURL(__dirname+"/application.html");
+	this_.mainWindow.loadURL(__dirname + "/application.html");
 });
-

@@ -1,5 +1,0 @@
---exe web-dev
---source-path=source/web-dev.exe
---use-project=xyo-win.static
---output-bin-path=output
-
