@@ -12,5 +12,5 @@ Shell.mkdirRecursivelyIfNotExists("output/library");
 Shell.removeDirRecursivelyForce("temp");
 Shell.mkdirRecursivelyIfNotExists("temp");
 
-Shell.system("7z x \"vendor/phpMyAdmin-"+version+"-all-languages.zip\" -aoa -otemp");
-Shell.rename("temp/phpMyAdmin-"+version+"-all-languages","output/library/phpmyadmin");
+Shell.system("7z x \"vendor/phpMyAdmin-" + version + "-all-languages.zip\" -aoa -otemp");
+Shell.rename("temp/phpMyAdmin-" + version + "-all-languages", "output/library/phpmyadmin");

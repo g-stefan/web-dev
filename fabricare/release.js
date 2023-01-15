@@ -38,7 +38,7 @@ if (!Script.isNil(Solution.releaseName)) {
 	releasePrefix = Solution.releaseName;
 };
 
-var releaseName = releasePrefix + "-" + version +"-portable";
+var releaseName = releasePrefix + "-" + version + "-portable";
 var jsonFilename = "release" + pathSeparator + releasePrefix + "-" + version + "-portable.sha512.json";
 var releaseDev = true;
 var releaseBin = true;
