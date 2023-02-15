@@ -5,7 +5,7 @@
 
 messageAction("make.build-web [hypertext-preprocessor]");
 
-var version = "8.1.14";
+var version = "8.1.16";
 
 Shell.mkdirRecursivelyIfNotExists("output/library");
 
@@ -16,7 +16,7 @@ Shell.system("7z x \"vendor/php-" + version + "-Win32-vs16-x64.zip\" -aoa -otemp
 Shell.rename("temp", "output/library/php");
 
 Shell.mkdirRecursivelyIfNotExists("temp");
-Shell.system("7z x \"vendor/php_mailparse-3.1.1-8.0-ts-vs16-x64.zip\" -aoa -otemp");
+Shell.system("7z x \"vendor/php_mailparse-3.1.3-8.1-ts-vs16-x64.zip\" -aoa -otemp");
 Shell.rename("temp/php_mailparse.dll", "output/library/php/ext/php_mailparse.dll");
 Shell.removeDirRecursivelyForce("temp");
 
