@@ -5,7 +5,7 @@
 
 messageAction("make.build-web [apache-httpd]");
 
-var version = "2.4.56";
+var version = "2.4.57";
 
 Shell.mkdirRecursivelyIfNotExists("output/library");
 
@@ -15,6 +15,7 @@ Shell.rename("temp/Apache24", "output/library/apache-http-server");
 Shell.rename("temp/ReadMe.txt", "output/library/apache-http-server/Distribution-ReadMe.txt");
 Shell.removeDirRecursivelyForce("temp");
 
+var version = "2.4.56";
 Shell.mkdirRecursivelyIfNotExists("temp");
 Shell.system("7z x vendor/httpd-" + version + "-win64-msvc-2022.7z -aoa -otemp");
 Shell.rename("temp/bin/rotatelogsw.exe", "output/library/apache-http-server/bin/rotatelogsw.exe");

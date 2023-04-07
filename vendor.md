@@ -1,7 +1,7 @@
 Software
 ---
 
-- Apache24 - https://www.apachelounge.com/download/ - httpd-2.4.56-win64-VS17.zip
+- Apache24 - https://www.apachelounge.com/download/ - httpd-2.4.57-win64-VS17.zip
 - MariaDB - https://downloads.mariadb.org/ - mariadb-10.6.11-winx64.zip
 - PHP - http://windows.php.net/download/ - php-8.1.14-Win32-vs16-x64.zip
 - Electron - https://github.com/electron/electron/releases - electron-v24.0.0-win32-x64.zip

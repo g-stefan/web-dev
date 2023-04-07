@@ -5,7 +5,7 @@
 
 messageAction("vendor [apache-httpd]");
 
-version = "2.4.56";
+version = "2.4.57";
 
 Shell.mkdirRecursivelyIfNotExists("vendor");
 
