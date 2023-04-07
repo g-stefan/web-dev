@@ -17,6 +17,7 @@ if (!Shell.fileExists("vendor/" + vendor)) {
 	exitIf(Shell.system(cmd));
 };
 
+version = "2.4.56";
 var vendor = "httpd-" + version + "-win64-msvc-2022.7z";
 if (!Shell.fileExists("vendor/" + vendor)) {
 	var webLink = "https://github.com/g-stefan/vendor-httpd/releases/download/v" + version + "/httpd-" + version + "-win64-msvc-2022.7z";
