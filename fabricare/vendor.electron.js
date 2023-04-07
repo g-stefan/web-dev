@@ -5,7 +5,7 @@
 
 messageAction("vendor [electron]");
 
-version = "21.3.4";
+version = "24.0.0";
 
 Shell.mkdirRecursivelyIfNotExists("vendor");
 

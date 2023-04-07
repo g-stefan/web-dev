@@ -145,6 +145,14 @@ var newJob = function() {
 		return errorMessage;
 	};
 
+	this_.reset = function(){
+		jobList = [];
+		jobIndex = 0;
+		isError = false;
+		errorMessage = "";
+		jobReturn = null;
+	};
+
 	this_.newJob = newJob;
 
 	this_.onStep = function(job) {

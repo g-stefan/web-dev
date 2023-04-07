@@ -5,7 +5,7 @@
 
 messageAction("make.build-web [apache-httpd]");
 
-var version = "2.4.54";
+var version = "2.4.56";
 
 Shell.mkdirRecursivelyIfNotExists("output/library");
 

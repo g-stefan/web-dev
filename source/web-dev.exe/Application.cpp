@@ -27,7 +27,7 @@ namespace WebDev {
 	};
 
 	void Application::showLicense() {
-		MessageBox(nullptr, WebDev::License::license(), msgBoxTitle, MB_OK | MB_ICONINFORMATION);
+		MessageBox(nullptr, WebDev::License::license().c_str(), msgBoxTitle, MB_OK | MB_ICONINFORMATION);
 	};
 
 	void Application::showVersion() {
