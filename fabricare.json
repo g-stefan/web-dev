@@ -14,7 +14,6 @@
 				"outputPath" : "output"
 			}
 		],		
-		"releaseOutput" : true,
-		"hasGithub" : true
+		"releaseOutput" : true
 	}
 }
