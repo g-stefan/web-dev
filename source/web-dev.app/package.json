@@ -2,6 +2,6 @@
   "name"    : "web-dev",
   "version" : "1.1.0",
   "main"    : "application.js",
-  "author": "Copyright (c) 2020-2023 Grigore Stefan <g_stefan@yahoo.com>",
+  "author": "Copyright (c) 2020-2024 Grigore Stefan <g_stefan@yahoo.com>",
   "license": "MIT License (MIT) <http://opensource.org/licenses/MIT>"
 }

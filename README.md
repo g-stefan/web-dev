@@ -4,7 +4,7 @@ Portable Apache HTTP Server + PHP + Maria DB
 
 ## License
 
-Copyright (c) 2020-2023 Grigore Stefan <g_stefan@yahoo.com>
+Copyright (c) 2020-2024 Grigore Stefan <g_stefan@yahoo.com>
 Licensed under the [MIT](LICENSE) license.
 
 **This is a compilation of different works.**
